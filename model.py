@@ -61,13 +61,13 @@ def select_info(name, index: str):
 
 def choice_action(choice):
   if choice == '1':
-    result, index_list = search_data(driver, str(input('Поиск водителя')))
+    result, index_list = search_data(driver, str(input('Поиск водителя: ')))
     return result, index_list
   elif choice == '2':
-    result, index_list = search_data(bus, str(input('Автобус')))
+    result, index_list = search_data(bus, str(input('Автобус: ')))
     return result, index_list
   elif choice == '3':
-    result, index_list = search_data(route, str(input('Маршрут')))
+    result, index_list = search_data(route, str(input('Маршрут: ')))
     return result, index_list
   else:  
     print('Неправильно')
